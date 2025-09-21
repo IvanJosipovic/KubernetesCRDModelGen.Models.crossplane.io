@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>KubernetesCRDModelGen.Models.crossplane.io</PackageId>
+    <RepositoryUrl>https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models.crossplane.io</RepositoryUrl>
+  </PropertyGroup>
+</Project>

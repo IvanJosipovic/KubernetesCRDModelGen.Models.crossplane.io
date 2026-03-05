@@ -7,9 +7,9 @@ metadata:
 spec:
   group: pkg.crossplane.io
   names:
+    kind: DeploymentRuntimeConfig
     categories:
     - crossplane
-    kind: DeploymentRuntimeConfig
     listKind: DeploymentRuntimeConfigList
     plural: deploymentruntimeconfigs
     singular: deploymentruntimeconfig

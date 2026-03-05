@@ -7,10 +7,10 @@ metadata:
 spec:
   group: pkg.crossplane.io
   names:
+    kind: FunctionRevision
     categories:
     - crossplane
     - pkgrev
-    kind: FunctionRevision
     listKind: FunctionRevisionList
     plural: functionrevisions
     singular: functionrevision

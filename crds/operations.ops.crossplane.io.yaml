@@ -7,9 +7,9 @@ metadata:
 spec:
   group: ops.crossplane.io
   names:
+    kind: Operation
     categories:
     - crossplane
-    kind: Operation
     listKind: OperationList
     plural: operations
     shortNames:

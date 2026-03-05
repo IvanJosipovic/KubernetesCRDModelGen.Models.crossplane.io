@@ -7,9 +7,9 @@ metadata:
 spec:
   group: ops.crossplane.io
   names:
+    kind: WatchOperation
     categories:
     - crossplane
-    kind: WatchOperation
     listKind: WatchOperationList
     plural: watchoperations
     shortNames:

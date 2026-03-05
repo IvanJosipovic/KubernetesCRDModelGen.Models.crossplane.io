@@ -7,10 +7,10 @@ metadata:
 spec:
   group: pkg.crossplane.io
   names:
+    kind: Provider
     categories:
     - crossplane
     - pkg
-    kind: Provider
     listKind: ProviderList
     plural: providers
     singular: provider

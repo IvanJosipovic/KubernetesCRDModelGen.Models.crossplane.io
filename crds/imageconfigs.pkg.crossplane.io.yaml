@@ -7,9 +7,9 @@ metadata:
 spec:
   group: pkg.crossplane.io
   names:
+    kind: ImageConfig
     categories:
     - crossplane
-    kind: ImageConfig
     listKind: ImageConfigList
     plural: imageconfigs
     singular: imageconfig

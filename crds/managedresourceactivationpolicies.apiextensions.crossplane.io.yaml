@@ -7,9 +7,9 @@ metadata:
 spec:
   group: apiextensions.crossplane.io
   names:
+    kind: ManagedResourceActivationPolicy
     categories:
     - crossplane
-    kind: ManagedResourceActivationPolicy
     listKind: ManagedResourceActivationPolicyList
     plural: managedresourceactivationpolicies
     shortNames:

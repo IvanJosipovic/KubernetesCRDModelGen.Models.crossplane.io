@@ -7,9 +7,9 @@ metadata:
 spec:
   group: protection.crossplane.io
   names:
+    kind: Usage
     categories:
     - crossplane
-    kind: Usage
     listKind: UsageList
     plural: usages
     singular: usage

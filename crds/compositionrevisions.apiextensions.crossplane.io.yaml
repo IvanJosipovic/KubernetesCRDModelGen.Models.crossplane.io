@@ -7,9 +7,9 @@ metadata:
 spec:
   group: apiextensions.crossplane.io
   names:
+    kind: CompositionRevision
     categories:
     - crossplane
-    kind: CompositionRevision
     listKind: CompositionRevisionList
     plural: compositionrevisions
     shortNames:

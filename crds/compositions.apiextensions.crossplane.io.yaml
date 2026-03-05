@@ -7,9 +7,9 @@ metadata:
 spec:
   group: apiextensions.crossplane.io
   names:
+    kind: Composition
     categories:
     - crossplane
-    kind: Composition
     listKind: CompositionList
     plural: compositions
     shortNames:

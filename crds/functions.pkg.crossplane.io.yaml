@@ -7,10 +7,10 @@ metadata:
 spec:
   group: pkg.crossplane.io
   names:
+    kind: Function
     categories:
     - crossplane
     - pkg
-    kind: Function
     listKind: FunctionList
     plural: functions
     singular: function

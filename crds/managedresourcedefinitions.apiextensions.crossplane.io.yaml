@@ -7,9 +7,9 @@ metadata:
 spec:
   group: apiextensions.crossplane.io
   names:
+    kind: ManagedResourceDefinition
     categories:
     - crossplane
-    kind: ManagedResourceDefinition
     listKind: ManagedResourceDefinitionList
     plural: managedresourcedefinitions
     shortNames:

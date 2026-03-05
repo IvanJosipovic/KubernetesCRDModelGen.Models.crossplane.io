@@ -7,9 +7,9 @@ metadata:
 spec:
   group: ops.crossplane.io
   names:
+    kind: CronOperation
     categories:
     - crossplane
-    kind: CronOperation
     listKind: CronOperationList
     plural: cronoperations
     shortNames:

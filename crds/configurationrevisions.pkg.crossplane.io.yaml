@@ -7,10 +7,10 @@ metadata:
 spec:
   group: pkg.crossplane.io
   names:
+    kind: ConfigurationRevision
     categories:
     - crossplane
     - pkgrev
-    kind: ConfigurationRevision
     listKind: ConfigurationRevisionList
     plural: configurationrevisions
     singular: configurationrevision

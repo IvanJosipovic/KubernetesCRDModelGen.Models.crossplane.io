@@ -7,10 +7,10 @@ metadata:
 spec:
   group: pkg.crossplane.io
   names:
+    kind: ProviderRevision
     categories:
     - crossplane
     - pkgrev
-    kind: ProviderRevision
     listKind: ProviderRevisionList
     plural: providerrevisions
     singular: providerrevision

@@ -7,10 +7,10 @@ metadata:
 spec:
   group: pkg.crossplane.io
   names:
+    kind: Configuration
     categories:
     - crossplane
     - pkg
-    kind: Configuration
     listKind: ConfigurationList
     plural: configurations
     singular: configuration

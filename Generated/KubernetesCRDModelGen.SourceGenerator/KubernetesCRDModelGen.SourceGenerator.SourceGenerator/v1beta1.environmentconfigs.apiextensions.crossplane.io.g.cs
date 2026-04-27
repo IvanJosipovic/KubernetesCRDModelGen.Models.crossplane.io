@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.apiextensions.crossplane.io;
 /// Read the Crossplane documentation for
 /// [more information about EnvironmentConfigs](https://docs.crossplane.io/latest/composition/environment-configs/).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EnvironmentConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1EnvironmentConfig>
@@ -39,7 +39,7 @@ public partial class V1beta1EnvironmentConfigList : IKubernetesObject<V1ListMeta
 
     /// <summary>List of V1beta1EnvironmentConfig objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1EnvironmentConfig>? Items { get; set; }
+    public required IList<V1beta1EnvironmentConfig> Items { get; set; }
 }
 
 /// <summary>
@@ -49,7 +49,7 @@ public partial class V1beta1EnvironmentConfigList : IKubernetesObject<V1ListMeta
 /// Read the Crossplane documentation for
 /// [more information about EnvironmentConfigs](https://docs.crossplane.io/latest/composition/environment-configs/).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EnvironmentConfig : IKubernetesObject<V1ObjectMeta>

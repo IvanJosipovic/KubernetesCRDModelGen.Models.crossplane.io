@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.pkg.crossplane.io;
 /// Read the Crossplane documentation for
 /// [more information about Providers](https://docs.crossplane.io/latest/packages/providers/).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ProviderList : IKubernetesObject<V1ListMeta>, IItems<V1Provider>
@@ -39,14 +39,14 @@ public partial class V1ProviderList : IKubernetesObject<V1ListMeta>, IItems<V1Pr
 
     /// <summary>List of V1Provider objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1Provider>? Items { get; set; }
+    public required IList<V1Provider> Items { get; set; }
 }
 
 /// <summary>
 /// LocalObjectReference contains enough information to let you locate the
 /// referenced object inside the same namespace.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ProviderSpecPackagePullSecrets
 {
@@ -65,7 +65,7 @@ public partial class V1ProviderSpecPackagePullSecrets
 /// RuntimeConfigRef references a RuntimeConfig resource that will be used
 /// to configure the package runtime.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ProviderSpecRuntimeConfigRef
 {
@@ -86,7 +86,7 @@ public partial class V1ProviderSpecRuntimeConfigRef
 /// ProviderSpec specifies details about a request to install a provider to
 /// Crossplane.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ProviderSpec
 {
@@ -173,7 +173,7 @@ public partial class V1ProviderSpec
 /// ImageConfigRef is a reference to an image config that indicates how the
 /// referenced image config was used by the package manager.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ProviderStatusAppliedImageConfigRefs
 {
@@ -187,7 +187,7 @@ public partial class V1ProviderStatusAppliedImageConfigRefs
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ProviderStatusConditions
 {
@@ -230,7 +230,7 @@ public partial class V1ProviderStatusConditions
 }
 
 /// <summary>ProviderStatus represents the observed state of a Provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ProviderStatus
 {
@@ -280,7 +280,7 @@ public partial class V1ProviderStatus
 /// Read the Crossplane documentation for
 /// [more information about Providers](https://docs.crossplane.io/latest/packages/providers/).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1Provider : IKubernetesObject<V1ObjectMeta>, ISpec<V1ProviderSpec?>, IStatus<V1ProviderStatus?>

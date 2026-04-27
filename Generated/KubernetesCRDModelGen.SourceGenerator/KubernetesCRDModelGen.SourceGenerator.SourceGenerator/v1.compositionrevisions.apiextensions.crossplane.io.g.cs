@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.apiextensions.crossplane.io;
 /// Crossplane creates and manages CompositionRevisions. Don&apos;t directly edit
 /// CompositionRevisions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1CompositionRevisionList : IKubernetesObject<V1ListMeta>, IItems<V1CompositionRevision>
@@ -39,14 +39,14 @@ public partial class V1CompositionRevisionList : IKubernetesObject<V1ListMeta>, 
 
     /// <summary>List of V1CompositionRevision objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1CompositionRevision>? Items { get; set; }
+    public required IList<V1CompositionRevision> Items { get; set; }
 }
 
 /// <summary>
 /// CompositeTypeRef specifies the type of composite resource that this
 /// composition is compatible with.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CompositionRevisionSpecCompositeTypeRef
 {
@@ -66,7 +66,7 @@ public partial class V1CompositionRevisionSpecCompositeTypeRef
 /// functions, each of which is responsible for producing composed
 /// resources that Crossplane should create or update.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CompositionRevisionSpecModeEnum>))]
 public enum V1CompositionRevisionSpecModeEnum
 {
@@ -78,7 +78,7 @@ public enum V1CompositionRevisionSpecModeEnum
 /// A SecretRef is a reference to a secret containing credentials that should
 /// be supplied to the function.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CompositionRevisionSpecPipelineCredentialsSecretRef
 {
@@ -92,7 +92,7 @@ public partial class V1CompositionRevisionSpecPipelineCredentialsSecretRef
 }
 
 /// <summary>Source of the function credentials.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CompositionRevisionSpecPipelineCredentialsSourceEnum>))]
 public enum V1CompositionRevisionSpecPipelineCredentialsSourceEnum
 {
@@ -106,7 +106,7 @@ public enum V1CompositionRevisionSpecPipelineCredentialsSourceEnum
 /// FunctionCredentials are optional credentials that a function
 /// needs to run.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CompositionRevisionSpecPipelineCredentials
 {
@@ -130,7 +130,7 @@ public partial class V1CompositionRevisionSpecPipelineCredentials
 /// FunctionRef is a reference to the function this step should
 /// execute.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CompositionRevisionSpecPipelineFunctionRef
 {
@@ -140,7 +140,7 @@ public partial class V1CompositionRevisionSpecPipelineFunctionRef
 }
 
 /// <summary>RequiredResourceSelector selects a required resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CompositionRevisionSpecPipelineRequirementsRequiredResources
 {
@@ -176,7 +176,7 @@ public partial class V1CompositionRevisionSpecPipelineRequirementsRequiredResour
 }
 
 /// <summary>RequiredSchemaSelector selects a required OpenAPI schema.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CompositionRevisionSpecPipelineRequirementsRequiredSchemas
 {
@@ -202,7 +202,7 @@ public partial class V1CompositionRevisionSpecPipelineRequirementsRequiredSchema
 /// pre-populating required resources without requiring a function to
 /// request them first.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CompositionRevisionSpecPipelineRequirements
 {
@@ -222,7 +222,7 @@ public partial class V1CompositionRevisionSpecPipelineRequirements
 }
 
 /// <summary>A PipelineStep in a function pipeline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CompositionRevisionSpecPipeline
 {
@@ -263,7 +263,7 @@ public partial class V1CompositionRevisionSpecPipeline
 /// CompositionRevisionSpec specifies the desired state of the composition
 /// revision.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CompositionRevisionSpec
 {
@@ -315,7 +315,7 @@ public partial class V1CompositionRevisionSpec
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CompositionRevisionStatusConditions
 {
@@ -361,7 +361,7 @@ public partial class V1CompositionRevisionStatusConditions
 /// CompositionRevisionStatus shows the observed state of the composition
 /// revision.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CompositionRevisionStatus
 {
@@ -377,7 +377,7 @@ public partial class V1CompositionRevisionStatus
 /// Crossplane creates and manages CompositionRevisions. Don&apos;t directly edit
 /// CompositionRevisions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1CompositionRevision : IKubernetesObject<V1ObjectMeta>, ISpec<V1CompositionRevisionSpec?>, IStatus<V1CompositionRevisionStatus?>

@@ -20,7 +20,7 @@ namespace KubernetesCRDModelGen.Models.apiextensions.crossplane.io;
 /// 
 /// Deprecated: Use protection.crossplane.io Usage or ClusterUsage.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("apiextensions.crossplane.io Usage is deprecated; migrate to protection.crossplane.io Usage or ClusterUsage")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -44,11 +44,11 @@ public partial class V1alpha1UsageList : IKubernetesObject<V1ListMeta>, IItems<V
 
     /// <summary>List of V1alpha1Usage objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1alpha1Usage>? Items { get; set; }
+    public required IList<V1alpha1Usage> Items { get; set; }
 }
 
 /// <summary>Reference to the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("apiextensions.crossplane.io Usage is deprecated; migrate to protection.crossplane.io Usage or ClusterUsage")]
 public partial class V1alpha1UsageSpecByResourceRef
@@ -62,7 +62,7 @@ public partial class V1alpha1UsageSpecByResourceRef
 /// Selector to the resource.
 /// This field will be ignored if ResourceRef is set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("apiextensions.crossplane.io Usage is deprecated; migrate to protection.crossplane.io Usage or ClusterUsage")]
 public partial class V1alpha1UsageSpecByResourceSelector
@@ -80,7 +80,7 @@ public partial class V1alpha1UsageSpecByResourceSelector
 }
 
 /// <summary>By is the resource that is &quot;using the other resource&quot;.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("apiextensions.crossplane.io Usage is deprecated; migrate to protection.crossplane.io Usage or ClusterUsage")]
 public partial class V1alpha1UsageSpecBy
@@ -109,7 +109,7 @@ public partial class V1alpha1UsageSpecBy
 }
 
 /// <summary>Reference to the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("apiextensions.crossplane.io Usage is deprecated; migrate to protection.crossplane.io Usage or ClusterUsage")]
 public partial class V1alpha1UsageSpecOfResourceRef
@@ -123,7 +123,7 @@ public partial class V1alpha1UsageSpecOfResourceRef
 /// Selector to the resource.
 /// This field will be ignored if ResourceRef is set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("apiextensions.crossplane.io Usage is deprecated; migrate to protection.crossplane.io Usage or ClusterUsage")]
 public partial class V1alpha1UsageSpecOfResourceSelector
@@ -141,7 +141,7 @@ public partial class V1alpha1UsageSpecOfResourceSelector
 }
 
 /// <summary>Of is the resource that is &quot;being used&quot;.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("apiextensions.crossplane.io Usage is deprecated; migrate to protection.crossplane.io Usage or ClusterUsage")]
 public partial class V1alpha1UsageSpecOf
@@ -170,7 +170,7 @@ public partial class V1alpha1UsageSpecOf
 }
 
 /// <summary>UsageSpec defines the desired state of Usage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("apiextensions.crossplane.io Usage is deprecated; migrate to protection.crossplane.io Usage or ClusterUsage")]
 public partial class V1alpha1UsageSpec
@@ -193,7 +193,7 @@ public partial class V1alpha1UsageSpec
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("apiextensions.crossplane.io Usage is deprecated; migrate to protection.crossplane.io Usage or ClusterUsage")]
 public partial class V1alpha1UsageStatusConditions
@@ -237,7 +237,7 @@ public partial class V1alpha1UsageStatusConditions
 }
 
 /// <summary>UsageStatus defines the observed state of Usage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("apiextensions.crossplane.io Usage is deprecated; migrate to protection.crossplane.io Usage or ClusterUsage")]
 public partial class V1alpha1UsageStatus
@@ -258,7 +258,7 @@ public partial class V1alpha1UsageStatus
 /// 
 /// Deprecated: Use protection.crossplane.io Usage or ClusterUsage.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("apiextensions.crossplane.io Usage is deprecated; migrate to protection.crossplane.io Usage or ClusterUsage")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

@@ -19,7 +19,7 @@ namespace KubernetesCRDModelGen.Models.protection.crossplane.io;
 /// Read the Crossplane documentation for
 /// [more information about usages](https://docs.crossplane.io/latest/managed-resources/usages/).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ClusterUsageList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ClusterUsage>
@@ -42,11 +42,11 @@ public partial class V1beta1ClusterUsageList : IKubernetesObject<V1ListMeta>, II
 
     /// <summary>List of V1beta1ClusterUsage objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1ClusterUsage>? Items { get; set; }
+    public required IList<V1beta1ClusterUsage> Items { get; set; }
 }
 
 /// <summary>Reference to the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUsageSpecByResourceRef
 {
@@ -59,7 +59,7 @@ public partial class V1beta1ClusterUsageSpecByResourceRef
 /// Selector to the resource.
 /// This field will be ignored if ResourceRef is set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUsageSpecByResourceSelector
 {
@@ -76,7 +76,7 @@ public partial class V1beta1ClusterUsageSpecByResourceSelector
 }
 
 /// <summary>By is the resource that is &quot;using the other resource&quot;.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUsageSpecBy
 {
@@ -104,7 +104,7 @@ public partial class V1beta1ClusterUsageSpecBy
 }
 
 /// <summary>Reference to the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUsageSpecOfResourceRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1ClusterUsageSpecOfResourceRef
 /// Selector to the resource.
 /// This field will be ignored if ResourceRef is set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUsageSpecOfResourceSelector
 {
@@ -134,7 +134,7 @@ public partial class V1beta1ClusterUsageSpecOfResourceSelector
 }
 
 /// <summary>Of is the resource that is &quot;being used&quot;.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUsageSpecOf
 {
@@ -162,7 +162,7 @@ public partial class V1beta1ClusterUsageSpecOf
 }
 
 /// <summary>ClusterUsageSpec defines the desired state of a ClusterUsage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUsageSpec
 {
@@ -184,7 +184,7 @@ public partial class V1beta1ClusterUsageSpec
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUsageStatusConditions
 {
@@ -227,7 +227,7 @@ public partial class V1beta1ClusterUsageStatusConditions
 }
 
 /// <summary>UsageStatus defines the observed state of Usage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUsageStatus
 {
@@ -246,7 +246,7 @@ public partial class V1beta1ClusterUsageStatus
 /// Read the Crossplane documentation for
 /// [more information about usages](https://docs.crossplane.io/latest/managed-resources/usages/).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ClusterUsage : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ClusterUsageSpec>, IStatus<V1beta1ClusterUsageStatus?>
